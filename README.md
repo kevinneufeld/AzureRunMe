@@ -4,7 +4,7 @@ Probably the quickest way to get your legacy or third-party code
 running on Windows Azure.
 
 N.B. AzureRunMe has moved to
-https://github.com/RobBlackwell/AzureRunMe
+https://github.com/WindowsAzure-Contrib/AzureRunMe
 
 ## Introduction
 
