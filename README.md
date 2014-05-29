@@ -105,7 +105,7 @@ dist.zip, before executing runme.bat (Specified as the Command
 configuration setting.
 
 Click on AzureRunMe and Publish your Azure package. Sign into the
-[Windows Azure Developer Portal](http://windows.azure.com).
+[Windows Azure Developer Portal](http://manage.windowsazure.com).
 
 Right Click, Publish, Configure Remote Desktop Connection.
 
