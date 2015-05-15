@@ -197,9 +197,6 @@ namespace WorkerRole
             var storageAccount = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue(DATA_CONNECTION_STRING));
 
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-
-            blobClient.RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(2), 10);
-
             CloudBlobContainer container = blobClient.GetContainerReference(containerName);
             CloudBlockBlob blob = container.GetBlockBlobReference(packageName);
 
@@ -237,9 +234,6 @@ namespace WorkerRole
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue(DATA_CONNECTION_STRING));
 
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-
-            blobClient.RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(2), 10);
-
             CloudBlobContainer container = blobClient.GetContainerReference(containerName);
             CloudBlockBlob blob = container.GetBlockBlobReference(packageName);
 
