@@ -1,4 +1,4 @@
-# AzureRunMe 1.0.0.24
+# AzureRunMe 1.0.0.25
 
 Probably the quickest way to get your legacy or third-party code
 running on Windows Azure.
@@ -133,7 +133,7 @@ like is:
 Prerequisites:
 
 * Visual Studio 2012/2013
-* The Windows Azure SDK for .NET version 2.2
+* The Windows Azure SDK for .NET
 
 ## Diagnostics
 
