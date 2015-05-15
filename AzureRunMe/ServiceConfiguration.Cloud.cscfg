@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="AzureRunMe" osFamily="3" osVersion="*" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2013-10.2.2">
+<ServiceConfiguration serviceName="AzureRunMe" osFamily="3" osVersion="*" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2014-06.2.4">
   <Role name="WorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
@@ -21,7 +21,6 @@
       <Setting name="PostUpdateCommands" value="runme.bat" />
       <Setting name="LogTableName" value="AzureRunMeLogsTable" />
       <Setting name="LogConnectionString" value="DefaultEndpointsProtocol=https;AccountName=YOURACCOUNTNAME;AccountKey=YOURACCOUNTKEY" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=YOURACCOUNTNAME;AccountKey=YOURACCOUNTKEY" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

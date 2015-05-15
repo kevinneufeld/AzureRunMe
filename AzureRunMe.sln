@@ -1,16 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureRunMe", "AzureRunMe\AzureRunMe.ccproj", "{733D38E4-0250-4E36-994B-0E9A346A273D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole", "WorkerRole\WorkerRole.csproj", "{9AB1F9BC-6F18-4344-8F96-27AA59FB923E}"
-EndProject
+# Visual Studio 14
+VisualStudioVersion = 14.0.22512.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96373FAA-23F6-4279-ADFE-DDE2CC57D02A}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureRunMe", "AzureRunMe\AzureRunMe.ccproj", "{733D38E4-0250-4E36-994B-0E9A346A273D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole", "WorkerRole\WorkerRole.csproj", "{9AB1F9BC-6F18-4344-8F96-27AA59FB923E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
