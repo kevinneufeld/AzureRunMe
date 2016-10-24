@@ -3,14 +3,14 @@
   <Role name="WorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Label" value="YOURPROJECT on AzureRunMe $version$" />
-      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=YOURACCOUNTNAME;AccountKey=YOURACCOUNTKEY" />
-      <Setting name="Packages" value="packages/jdk1.6.0_24.zip;packages/apache-tomcat-7.0.12-windows-x64.zip;packages/runme.zip" />
-      <Setting name="AlwaysInstallPackages" value="false" />
+      <Setting name="Label" value="WebFolders on AzureRunMe $version$" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=kpnfilestore;AccountKey=Hx6TxzfXNw9xFc6Ybw8qSXDVmI4Xq2pMJqh4FPgZk3wU32qpn8eLMWsWoFXpjchRkWXCpvLhRYg1SQAWw8wjVQ==" />
+      <Setting name="Packages" value="packages/apache2.zip;packages/dist.zip" />
+      <Setting name="AlwaysInstallPackages" value="true" />
       <Setting name="WorkingDirectory" value="c:\applications\" />
       <Setting name="EnvironmentVariables" value="azurerunme=true;pi=3.14" />
       <Setting name="OnStartCommands" value="start.bat" />
-      <Setting name="Commands" value="runme.bat" />
+      <Setting name="Commands" value="start.bat;runme.bat" />
       <Setting name="OnStopCommands" value="stop.bat" />
       <Setting name="DontExit" value="true" />
       <Setting name="DefaultConnectionLimit" value="12" />
@@ -20,7 +20,7 @@
       <Setting name="PreUpdateSleep" value="20000" />
       <Setting name="PostUpdateCommands" value="runme.bat" />
       <Setting name="LogTableName" value="AzureRunMeLogsTable" />
-      <Setting name="LogConnectionString" value="DefaultEndpointsProtocol=https;AccountName=YOURACCOUNTNAME;AccountKey=YOURACCOUNTKEY" />
+      <Setting name="LogConnectionString" value="DefaultEndpointsProtocol=https;AccountName=kpnfilestore;AccountKey=Hx6TxzfXNw9xFc6Ybw8qSXDVmI4Xq2pMJqh4FPgZk3wU32qpn8eLMWsWoFXpjchRkWXCpvLhRYg1SQAWw8wjVQ==" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
