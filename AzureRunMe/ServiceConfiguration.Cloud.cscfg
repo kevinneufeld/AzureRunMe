@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="AzureRunMe" osFamily="3" osVersion="*" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2014-06.2.4">
+<ServiceConfiguration serviceName="AzureRunMe" osFamily="3" osVersion="*" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2015-04.2.6">
   <Role name="WorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Label" value="WebFolders on AzureRunMe $version$" />
       <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=kpnfilestore;AccountKey=Hx6TxzfXNw9xFc6Ybw8qSXDVmI4Xq2pMJqh4FPgZk3wU32qpn8eLMWsWoFXpjchRkWXCpvLhRYg1SQAWw8wjVQ==" />
-      <Setting name="Packages" value="packages/apache2.zip;packages/dist.zip" />
+      <Setting name="Packages" value="packages/dist.zip;packages/Apache22.zip" />
       <Setting name="AlwaysInstallPackages" value="true" />
-      <Setting name="WorkingDirectory" value="c:\applications\" />
+      <Setting name="WorkingDirectory" value="C:\Applications\" />
       <Setting name="EnvironmentVariables" value="azurerunme=true;pi=3.14" />
       <Setting name="OnStartCommands" value="start.bat" />
       <Setting name="Commands" value="start.bat;runme.bat" />
@@ -21,6 +21,8 @@
       <Setting name="PostUpdateCommands" value="runme.bat" />
       <Setting name="LogTableName" value="AzureRunMeLogsTable" />
       <Setting name="LogConnectionString" value="DefaultEndpointsProtocol=https;AccountName=kpnfilestore;AccountKey=Hx6TxzfXNw9xFc6Ybw8qSXDVmI4Xq2pMJqh4FPgZk3wU32qpn8eLMWsWoFXpjchRkWXCpvLhRYg1SQAWw8wjVQ==" />
+      <Setting name="WebFoldersDriveLetter" value="W:"/>
+      <Setting name="WebFoldersShareName" value="webfolders"/>
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

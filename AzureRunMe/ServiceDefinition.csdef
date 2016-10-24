@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="AzureRunMe" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
-  <WorkerRole name="WorkerRole" enableNativeCodeExecution="true" vmsize="Small">
+<ServiceDefinition name="AzureRunMe" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WorkerRole name="WorkerRole" vmsize="Small">
     <Runtime executionContext="elevated">
     </Runtime>
     <Endpoints>
       <!-- See http://www.iana.org/assignments/port-numbers -->
-      <InputEndpoint name="telnet" port="23" protocol="tcp" localPort="23" />
       <InputEndpoint name="http" port="80" protocol="tcp" localPort="80" />
       <InputEndpoint name="http-alt" port="8080" protocol="tcp" localPort="8080" />
       <!--<InternalEndpoint name="port1" protocol="tcp" />-->
@@ -36,8 +35,12 @@
       <Setting name="LogTableName" />
       <Setting name="LogConnectionString" />
       <Setting name="Label" />
+      <Setting name="WebFoldersDriveLetter"/>
+      <Setting name="WebFoldersShareName"/>
     </ConfigurationSettings>
     <Imports>
     </Imports>
+    <LocalResources>
+    </LocalResources>
   </WorkerRole>
 </ServiceDefinition>
